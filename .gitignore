@@ -209,3 +209,6 @@ __marimo__/
 # Mac OS
 .DS_Store
 
+# Custom folders and files
+projects_guidelines/
+projects_original_data/
