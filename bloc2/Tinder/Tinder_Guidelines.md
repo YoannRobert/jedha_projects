@@ -1,6 +1,6 @@
 # Speed Dating with Tinder
 
-![Tinder](https://full-stack-assets.s3.eu-west-3.amazonaws.com/M03-EDA/Tinder-Symbole.png)
+<img src="https://full-stack-assets.s3.eu-west-3.amazonaws.com/M03-EDA/Tinder-Symbole.png" alt="Tinder" width="384" height="216">
 
 ## Company's description 📇
 
