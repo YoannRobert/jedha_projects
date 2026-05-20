@@ -37,7 +37,7 @@ Your boss gave you a list of examples of questions that would be interesting:
 - Which publisher has released the most games on Steam?
 - What are the best rated games?
 - Are there years with more releases? Were there more or fewer game releases during the Covid, for example?
-- How are the prizes distributed? Are there many games with a discount?
+- How are the prices distributed? Are there many games with a discount?
 - What are the most represented languages?
 - Are there many games prohibited for children under 16/18?
 
@@ -50,7 +50,7 @@ Your boss gave you a list of examples of questions that would be interesting:
 
 ### Platform analysis
 
-- Are most games available on Windows/Mac/Linux instead?
+- Are most games available on Windows/Mac/Linux?
 - Do certain genres tend to be preferentially available on certain platforms?
 
 You're free to follow these guidelines, or to choose a different angle of analysis, as long as your analysis reveals 
