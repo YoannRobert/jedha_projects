@@ -4,6 +4,9 @@
 
 > Projet d'analyse exploratoire (EDA) · Certification CDSD, bloc 2 · Auteur : **Yoann ROBERT**
 
+> **TL;DR** : Visualiser le [notebook complet](https://yoannrobert.github.io/jedha_projects/bloc2/Steam/html/Steam.html) en ligne 
+ou le [dashboard](https://yoannrobert.github.io/jedha_projects/bloc2/Steam/html/Steam_dashboard.html) associé, plus synthétique.
+
 Analyse globale du marché du jeu vidéo via le catalogue Steam pour identifier les leviers réels du succès d'un jeu, et écarter les fausses pistes, en vue du lancement d'un nouveau titre par Ubisoft.
 
 ## Contexte & problématique
@@ -80,14 +83,17 @@ En réponse aux questions directrices du sujet :
 └── Steam_guidelines.md        # consignes données par Jedha
 ```
 
-> Les chemins d'images de ce README (`images/...`) supposent que `images/` est à la racine du projet et que le notebook est dans un sous-dossier `notebooks/`. Ajustez les liens si votre arborescence diffère.
-
 ## Exécution
 
-Pour faciliter la consultation par le jury, deux exports HTML ont été produits depuis le notebook `Steam.ipynb` : l'analyse complète d'une part, la vue dashboard de synthèse d'autre part. Les visualisations y sont intégrées. Deux options sont proposées :
+Le travail a été effectué sur Databricks Free Edition (*serverless compute*) dans un notebook stocké dans le workspace personnel de l'auteur.
+Afin de visualiser plus facilement les graphiques, un dashboard a aussi été créé (il est associé au notebook).
 
-- **Consultation directe (recommandée)** : télécharger les fichiers `html/Steam.html` (analyse complète) et `html/Steam_dashboard.html` (dashboard de synthèse) depuis le dépôt, puis les ouvrir avec un navigateur Internet. Aucune installation n'est requise.
-- **Import dans un workspace Databricks personnel** : importer dans son workspace Databricks (Free Edition suffisante) soit la version native `notebooks/Steam.ipynb`, soit son export HTML `html/Steam.html`. Attacher ensuite le notebook à un compute *serverless* ou à un cluster classique, puis exécuter les cellules dans l'ordre. Aucune dépendance externe n'est à installer : le notebook s'appuie uniquement sur `pyspark.sql.functions` et `pyspark.sql.types`, et lit le dataset directement depuis le bucket S3 public.
+**Remarque :** Le bouton "Publish" mentionné dans l'énoncé Jedha n'est plus disponible sur Databricks. Plus simplement, un notebook n'est plus partageable publiquement.
+
+Deux options sont proposées :
+
+- **Consultation directe (recommandée)** : Pour faciliter la consultation par le jury ou n'importe qui, des exports HTML du notebook et du dashboard ont été faits. En cliquant sur les liens, retrouver [analyse complète](https://yoannrobert.github.io/jedha_projects/bloc2/Steam/html/Steam.html) d'une part ou le [dashboard synthétique](https://yoannrobert.github.io/jedha_projects/bloc2/Steam/html/Steam_dashboard.html) d'autre part.
+- **Import dans un workspace Databricks personnel** : Importer dans un workspace Databricks (Free Edition suffisante) soit la version Jupyter Notebook `notebooks/Steam.ipynb` soit l'export HTML `html/Steam.html`. Attacher ensuite le notebook à un compute *serverless* ou à un cluster classique, puis exécuter les cellules dans l'ordre. Aucune dépendance externe n'est à installer. Le dataset est lu directement depuis le bucket S3 public.
 
 > Le notebook tourne sur Databricks Free Edition (*serverless compute*), qui n'autorise pas la mise en cache explicite des DataFrames (`cache()` et `persist()` lèvent une exception). L'environnement gère son propre cache de manière transparente. Le volume traité (~55 000 lignes) ne justifie pas la matérialisation en tables Delta.
 
@@ -104,4 +110,4 @@ Résultats à lire avec prudence méthodologique :
 
 ## Stack technique
 
-PySpark · Databricks (Free Edition, *serverless compute*) · Databricks Visualizations (graphiques natifs du notebook) · SQL (`pyspark.sql.functions`, `pyspark.sql.types`)
+PySpark · Databricks (Free Edition, *serverless compute*) · Databricks Visualizations
