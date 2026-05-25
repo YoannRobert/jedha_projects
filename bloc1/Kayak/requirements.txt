@@ -1,0 +1,11 @@
+boto3==1.42.59
+ipykernel==7.2.0
+ipython==9.10.0
+numpy==2.4.6
+pandas==3.0.3
+plotly==6.6.0
+psycopg2-binary==2.9.10
+python-dotenv==1.2.2
+requests==2.34.2
+Scrapy==2.14.1
+SQLAlchemy==2.0.50

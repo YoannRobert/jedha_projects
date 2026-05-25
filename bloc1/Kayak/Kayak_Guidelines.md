@@ -15,7 +15,7 @@ The company was founded in 2004 by Steve Hafner & Paul M. English. After a few r
 * <a href="https://Rentalcars.com/" target="_blank">RentalCars</a>
 * <a href="https://www.opentable.com/" target="_blank">OpenTable</a>
 
-With over \$300 million revenue a year, Kayak operates in almost all countries and all languages to help their users book travels accros the globe. 
+With over \$300 million revenue a year, Kayak operates in almost all countries and all languages to help their users book travels across the globe. 
 
 ## Project 🚧
 
@@ -105,7 +105,7 @@ To help you achieve this project, here are a few tips that should help you
 
 Since BookingHoldings doesn't have aggregated databases, it will be much faster to scrape data directly from booking.com 
 
-You can scrap as many information asyou want, but we suggest that you get at least:
+You can scrap as many information as you want, but we suggest that you get at least:
 
 *   hotel name,
 *   Url to its booking.com page,
