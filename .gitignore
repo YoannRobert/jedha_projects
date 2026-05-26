@@ -210,5 +210,6 @@ __marimo__/
 .DS_Store
 
 # Custom folders and files
+data/
 projects_guidelines/
 projects_original_data/
