@@ -44,7 +44,7 @@ La démarche suit la méthodologie "start small grow big" préconisée par Jedha
 
 ## Principaux résultats
 
-**Le constat central : un jeu de données à concentration géographique extrême, défavorable aux algorithmes de densité.** Manhattan absorbe 78% des pickups, et 1% des cellules d'une grille kilométrique en concentrent 82%. Les densités locales varient d'un facteur ~6 500 entre la cellule la plus dense et celle du 90e centile. Cette structure rend les algorithmes basés sur la densité (DBScan, HDBScan) inopérants, alors que KMeans, qui partitionne par géométrie, produit des hot zones cohérentes et exploitables.
+**Le constat central : un jeu de données à concentration géographique extrême, défavorable aux algorithmes de densité.** Manhattan absorbe 78% des pickups, et 1% des cellules d'une grille kilométrique en concentrent 32%. Les densités locales varient d'un facteur ~74 000 entre la cellule la plus dense et celle du 90e centile. Cette structure rend les algorithmes basés sur la densité (DBScan, HDBScan) inopérants, alors que KMeans, qui partitionne par géométrie, produit des hot zones cohérentes et exploitables.
 
 ![Heatmap du volume de pickups par jour et par heure](images/04_volumes_pickups_par_jour_et_par_heure.png)
 
@@ -52,7 +52,7 @@ L'exploration temporelle révèle trois phases d'activité bien distinctes : un 
 
 En réponse aux objectifs du projet :
 
-- **KMeans est le seul algorithme à produire un clustering opérationnellement exploitable.** Avec K=18 sur jeudi 17h (case la plus chargée), il identifie 18 hot zones correspondant à des points d'intérêt reconnaissables : Midtown, Times Square, Penn Station, Flatiron, Financial District, Upper East/West Side, ainsi que l'aéroport LaGuardia. Aucun point n'est rejeté en bruit, et la taille des clusters varie sur un facteur 5, ce qui reflète bien la hiérarchie de la demande.
+- **KMeans est le seul algorithme à produire un clustering opérationnellement exploitable.** Avec K=18 sur jeudi 17h (case la plus chargée), il identifie 18 hot zones correspondant à des points d'intérêt reconnaissables : Midtown, East Village, Murray Hill, Flatiron, Financial District, Upper East/West Side, Chelsea, Williamsburg, ainsi que l'aéroport LaGuardia. Aucun point n'est rejeté en bruit, et la taille des clusters varie sur un facteur 9, ce qui reflète bien la hiérarchie de la demande.
 
 ![Hot zones KMeans sur jeudi 17h](images/10_clusters_KMeans_K_18_jeudi_17h.png)
 
