@@ -1,0 +1,15 @@
+geopandas==1.1.3
+ipykernel==7.2.0
+ipython==9.13.0
+nbconvert==7.17.1
+nbformat==5.10.4
+numpy==2.4.6
+pandas==3.0.3
+plotly==6.6.0
+pyarrow==24.0.0
+pyogrio==0.12.1
+pyproj==3.7.2
+python-dotenv==1.2.2
+requests==2.34.2
+scikit-learn==1.8.0
+shapely==2.1.2
