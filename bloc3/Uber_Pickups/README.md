@@ -6,6 +6,11 @@
 
 > Projet de machine learning non supervisé · Certification CDSD, bloc 3 · Auteur : **Yoann ROBERT**
 
+> **TL;DR** : Visualiser le [notebook complet](https://yoannrobert.github.io/jedha_projects/bloc3/Uber_Pickups/html/Uber_Pickups.html) en ligne 
+ou les dashboards associés permettant de visualiser les hot zones 
+[par régime hebdomadaire et par tranche horaire](https://yoannrobert.github.io/jedha_projects/bloc3/Uber_Pickups/html/23_tableau_de_bord_hot_zones_regime_hebdo_et_tranche_horaire.html) 
+ou [par jour et par tranche horaire](https://yoannrobert.github.io/jedha_projects/bloc3/Uber_Pickups/html/24_tableau_de_bord_hot_zones_jour_et_tranche_horaire.html).
+
 Identification des zones d'attente optimales (hot zones) pour les chauffeurs Uber à New York, par clustering géo-temporel de 4,33 millions de pickups, avec comparaison méthodologique de trois algorithmes (KMeans, DBScan, HDBScan) et production de tableaux de bord interactifs à granularité variable.
 
 ## Contexte et problématique
