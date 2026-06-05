@@ -1,6 +1,6 @@
 <img src="https://full-stack-assets.s3.eu-west-3.amazonaws.com/M08-deep-learning/AT%26T_logo_2016.svg" alt="AT&T LOGO" width="50%" />
 
-# Orange SPAM detector
+# AT&T SPAM detector
 
 ## Company's Description 📇
 
