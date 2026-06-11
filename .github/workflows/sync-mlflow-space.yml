@@ -21,7 +21,7 @@ jobs:
 
       - name: Push vers HuggingFace Space
         env:
-          HF_TOKEN: ${{ secrets.HF_DEMODAY_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           cd bloc5/Getaround_Analysis/spaces/mlflow
           git init -b main
