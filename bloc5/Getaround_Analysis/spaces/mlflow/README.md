@@ -1,8 +1,8 @@
 ---
 title: MLflow server for Getaround Analysis
 emoji: 📊
-colorFrom: white
-colorTo: blue
+colorFrom: purple
+colorTo: indigo
 sdk: docker
 pinned: false
 ---
