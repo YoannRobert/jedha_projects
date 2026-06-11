@@ -1,8 +1,8 @@
 ---
-title: MLflow DDay
-emoji: ⚡️
-colorFrom: yellow
-colorTo: red
+title: MLflow server for Getaround Analysis
+emoji: 📊
+colorFrom: white
+colorTo: blue
 sdk: docker
 pinned: false
 ---
