@@ -1,0 +1,5 @@
+altair
+openpyxl
+pandas
+plotly
+streamlit
