@@ -138,6 +138,8 @@ class PredictionResponse(BaseModel):
 
 # Application FastAPI
 description = """
+# Getaround Pricing API
+
 API de prédiction du prix journalier de location d'une voiture sur Getaround.
 
 Le modèle sous-jacent est un **XGBoostRegressor** entraîné sur ~4800 voitures,
@@ -149,11 +151,84 @@ servi depuis le MLflow Model Registry via l'alias `production`.
 - RMSE : 15,13 €
 - R² : 0,790
 
-## Utilisation
+## Endpoints
 
-L'endpoint `/predict` accepte un payload JSON avec une liste d'objets
-décrivant chacun une voiture. La réponse est une liste de prix prédits
-en euros, dans le même ordre que les entrées.
+### `GET /`
+
+Message d'accueil de l'API.
+
+- **Méthode** : GET
+- **Input** : aucun
+- **Output** : objet JSON avec un message et des liens utiles
+
+### `POST /predict`
+
+Prédit le prix journalier de location pour une ou plusieurs voitures.
+
+- **Méthode** : POST
+- **Input** : objet JSON avec une clé `input` contenant une liste d'objets
+  décrivant chacun une voiture (voir le schéma `InputPayload` ci-dessous)
+- **Output** : objet JSON avec une clé `prediction` contenant la liste des
+  prix prédits en euros, dans le même ordre que les entrées
+
+## Exemples d'utilisation
+
+### Avec curl
+
+```bash
+curl -X POST https://yoannrobert-fastapi-getaround-price-prediction.hf.space/predict \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "input": [
+      {
+        "mileage": 100000,
+        "engine_power": 110,
+        "model_key": "Citroën",
+        "fuel": "diesel",
+        "paint_color": "black",
+        "car_type": "estate",
+        "private_parking_available": true,
+        "has_gps": true,
+        "has_air_conditioning": false,
+        "automatic_car": false,
+        "has_getaround_connect": true,
+        "has_speed_regulator": true,
+        "winter_tires": false
+      }
+    ]
+  }'
+```
+
+### Avec Python
+
+```python
+import requests
+
+response = requests.post(
+    "https://yoannrobert-fastapi-getaround-price-prediction.hf.space/predict",
+    json={
+        "input": [
+            {
+                "mileage": 100000,
+                "engine_power": 110,
+                "model_key": "Citroën",
+                "fuel": "diesel",
+                "paint_color": "black",
+                "car_type": "estate",
+                "private_parking_available": True,
+                "has_gps": True,
+                "has_air_conditioning": False,
+                "automatic_car": False,
+                "has_getaround_connect": True,
+                "has_speed_regulator": True,
+                "winter_tires": False,
+            }
+        ]
+    },
+)
+print(response.json())
+# {'prediction': [105.01449584960938]}
+```
 """
 
 app = FastAPI(
