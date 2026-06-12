@@ -1,8 +1,9 @@
 # Projets de certification CDSD
 
-Dépôt regroupant les huit projets réalisés dans le cadre de la certification "Concepteur Développeur
+Dépôt regroupant les huit projets individuels réalisés dans le cadre de la certification "Concepteur Développeur
 en Science des Données" (Jedha), répartis en cinq blocs. Chaque projet dispose de son propre README
 détaillé dans son dossier.
+Le projet final comptant pour le bloc6, réalisé en groupe, est ajouté à la fin de la liste ci-dessous.
 
 | Bloc | Projet                                                                                                           | Compétences clés              | Stack technique                                   |
 |------|------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------|
