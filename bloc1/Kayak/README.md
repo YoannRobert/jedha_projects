@@ -1,6 +1,6 @@
 # Kayak — Recommander les meilleures destinations françaises à partir de données collectées
 
-<img src="https://seekvectorlogo.com/wp-content/uploads/2018/01/kayak-vector-logo.png" alt="Kayak" width="295">
+<img src="images/kayak_logo.png" alt="Kayak" width="295">
 
 > Projet d'ingénierie de données · Certification CDSD, bloc 1 · Auteur : **Yoann ROBERT**
 
